@@ -1,14 +1,5 @@
 <?php
 
-/**
- * This class registers the Widget for WP Unit Converter in the Widget Page.
- *
- * @link       centangle.com
- * @since      1.0.0
- *
- * @package    Wp_Unit_Converter/admin
- * @subpackage Wp_Unit_Converter_Widget
- */
 
 class Wp_Unit_Converter_Widget extends WP_Widget {
 
@@ -20,23 +11,22 @@ class Wp_Unit_Converter_Widget extends WP_Widget {
         );
     }
 
-// Creating widget front-end
+
     public function widget($args, $instance) {
         $title = apply_filters('widget_title', $instance['title']);
 
-// before and after widget arguments are defined by themes
+
         echo $args['before_widget'];
         if (!empty($title)) {
             echo $args['before_title'] . $title . $args['after_title'];
         }
 
-// This is where you run the code and display the output
         $wpuc_do_shortcode = $instance['wpuc_shortcode'];
         echo do_shortcode( $wpuc_do_shortcode );
         echo $args['after_widget'];
     }
 
-// Widget Backend
+
     public function form($instance) {
         if (isset($instance['title'])) {
             $title = $instance['title'];

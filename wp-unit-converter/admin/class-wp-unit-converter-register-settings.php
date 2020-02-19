@@ -1,51 +1,11 @@
 <?php
 
-/**
- * The admin-specific functionality of the plugin.
- *
- * @link       centangle.com
- * @since      1.0.0
- *
- * @package    Wp_Unit_Converter/admin
- * @subpackage Wpuc_Register_Settings
- */
-
-/**
- * The admin-specific functionality of the plugin.
- *
- * Registers Field settings for the option submenu page for plugin under Options Menu
- *
- * @package    Wp_Unit_Converter
- * @subpackage Wp_Unit_Converter/admin
- * @author     Centangle Interactive <hello@centangle.com>
- */
 class Wp_Unit_Converter_Register_Settings {
 
-	/**
-	 * The ID of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 * @var      string    $plugin_name    The ID of this plugin.
-	 */
 	private $plugin_name;
 
-	/**
-	 * The version of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 * @var      string    $version    The current version of this plugin.
-	 */
 	private $version;
 
-	/**
-	 * Initialize the class and set its properties.
-	 *
-	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of this plugin.
-	 * @param      string    $version    The version of this plugin.
-	 */
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
@@ -53,11 +13,6 @@ class Wp_Unit_Converter_Register_Settings {
 
 	}
 
-	/**
-	 * Registers Fields and save values in db.
-	 *
-	 * @since    1.0.0
-	 */
 	public function wpuc_options_submenu_page_fields() {
 
 		register_setting( 
@@ -136,16 +91,16 @@ class Wp_Unit_Converter_Register_Settings {
 					<div class="wpuc_orientation_vertical">
 						<img src=" <?php echo (plugins_url( '/wp-unit-converter/admin/images/wpuc_vertical_orientation.png')) ?> " alt="WP Unit Converter Vertical Orientation" width="300px" >
 					</div>
-				</div> <!-- wpuc_orientation_option -->
+				</div> 
 
 				<div class="wpuc_orientation_option">
 					<input type="radio" name="wpuc_options[wpuc_orientation]" <?php checked( 'horizontal', $wpuc_options['wpuc_orientation'], true ); echo ( ( get_option( 'wpuc_options' ) ) ? '' : 'checked'); ?> Value="horizontal" />
 					<div class="wpuc_orientation_horizontal">
 						<img src="<?php echo (plugins_url( '/wp-unit-converter/admin/images/wpuc_horizontal_orientation.png' )) ?>" alt="WP Unit Converter Horizontal Orientation" width="300px" >
 					</div>
-				</div> <!-- wpuc_orientation_option -->
+				</div> 
 
-			</div> <!-- wpuc_orientation_options -->
+			</div> 
 
 		<div>
 		
