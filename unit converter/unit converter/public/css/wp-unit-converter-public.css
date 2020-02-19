@@ -1,0 +1,53 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#wpuc-converter-box {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.wpuc-main-form {
+  display: flex;
+  justify-content: space-around;  
+}
+
+.wpuc-main-form_vertical {
+  flex-direction: column;
+}
+
+#converter-selection {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#converter-selection .wpuc-select {
+  width: 100%;
+}
+
+.wpuc-field-value.wpuc-select, .wpuc-field-value.wpuc-input {
+  display: block;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.wpuc-field-value.wpuc-input {
+  border-radius: 2px 2px 0px 0px;
+  line-height: 1.5;
+}
+
+.wpuc-field-value.wpuc-select {
+  padding: 5px 0px;
+  border-radius: 0px 0px 2px 2px;
+  margin-top: -1px;
+}
+
+.wpuc-equalizer {
+  margin: 1em;
+  align-self: center;
+}
+
+.wpuc-equalizer_vertical {
+  margin: 0.5em 1em !important;
+}

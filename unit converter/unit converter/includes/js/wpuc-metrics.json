@@ -1,0 +1,105 @@
+{
+   "metrics":{
+   		"distance":{
+   			"title":"Length / Distance Converter",
+   			"description": "Unit converter for length",
+   			"base_unit":"mm",
+   			"select_box":{
+   				"mm":"Millimeters",
+   				"cm":"Centimeters",   
+   				"m":"Meters",
+   				"km":"Kilometers",				
+   				"ft":"Feet",
+   				"in":"Inches",
+   				"yd":"Yards", 
+				"mi":"Miles",		
+   				"dam":"Decameters",
+   				"hm":"Hectometers",
+   				"dm":"Decimeters"
+   				
+   			},
+			"shortcode": "[wpuc_unit_converter converter=distance]"
+   		},
+   		"temperature":{
+   			"title":"Temperature Converter",
+   			"description": "Unit converter for temperature",
+   			"base_unit":"celsius",
+   			"select_box":{
+   				"celsius":"Celsius",
+   				"fahrenheit":"Fahrenheit",   
+   				"kelvin":"Kelvin"
+   				
+   			},   			
+   			"convert_to":{
+   				"celsius":{"base":"0","ratio":"1"},
+   				"fahrenheit":{"base":"32","ratio":"1.8"},
+   				"kelvin":{"base":"273.15","ratio":"1"}
+			},
+			"shortcode": "[wpuc_unit_converter converter=temperature]"
+   		},
+   		"time":{
+   			"title":"Time Converter",
+   			"description": "Unit converter for time",
+   			"base_unit":"ms",
+   			"select_box":{
+   				"ms":"Miliseconds",
+   				"s":"Seconds",
+   				"minutes":"Minutes",
+   				"h":"Hours",
+   				"days":"Days",
+   				"weeks":"Weeks"
+   				
+   			},
+			"shortcode": "[wpuc_unit_converter converter=time]"
+   		},
+   		"weight":{
+   			"title":"Weight Converter",
+   			"description": "Unit converter for weight",
+   			"base_unit":"mg",
+   			"select_box":{
+   				"mg":"Miligrams",
+   				"g":"Grams",
+   				"kg":"Kilograms",   				
+   				"lb":"Pounds",
+   				"oz":"Ounces",   				
+   				"dag":"Decagrams",
+   				"hg":"Hectograms",
+   				"cg":"Centigrams",
+   				"dg":"Decigrams"
+   				
+   			},
+			"shortcode": "[wpuc_unit_converter converter=weight]"
+   		},
+   		"area":{
+   			"title":"Area Converter",
+   			"description": "Unit converter for area",
+   			"base_unit":"sqmil",
+   				"select_box":{
+   				"sqmil":"Square Millimeters",
+   				"m2":"Square Meters",
+   				"sqft":"Square Feet",
+   				"sqin":"Square Inches",
+   				"sqyd":"Square Yards", 
+				"sqmi":"Square Miles",		
+   				"acre":"Acres",
+   				"hectare":"Hectares"
+   				
+   			},
+			"shortcode": "[wpuc_unit_converter converter=area]"
+   		},
+   		"speed":{
+   			"title":"Speed Converter",
+   			"description": "Unit converter for speed",
+   			"base_unit":"km/h",
+   				"select_box":{
+   				"km/h":"Kilometers / hour",
+   				"miles/h":"Miles / Hour",
+   				"km/s":"Kilometers / second",
+   				"miles/s":"Miles / second",
+   				"meters/s":"Meters / second",
+   				"feet/s":"Feet / second"
+   			},
+			"shortcode": "[wpuc_unit_converter converter=speed]"
+   		}
+   }
+}
